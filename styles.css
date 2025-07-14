@@ -1,0 +1,88 @@
+/* 🔮 GLOBAL STRUCTURE */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #eaeaf2;
+  background-color: #0a0f1c;
+  padding: 40px;
+  line-height: 1.6;
+}
+
+/* 🌈 CLASS SELECTORS (affecting 2+ tags) */
+.glow-text {
+  color: #ffcaff;
+  text-shadow: 0 0 8px #ff79c6;
+}
+
+.boxed {
+  border: 2px solid #7df9ff;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+/* 🧬 ID SELECTORS (affecting 2+ tags) */
+#main-title {
+  font-size: 2.8em;
+  color: #78f5ff;
+  text-align: center;
+}
+.glow-text {
+  text-shadow: 0 0 8px #ff79c6;
+}
+
+#footer-note {
+  font-style: italic;
+  color: #888;
+  text-align: right;
+}
+
+/* 🌀 SHARED ELEMENTS */
+a {
+  color: #8be9fd;
+  text-decoration: none;
+}
+a:hover {
+  color: #fff68f;
+  text-shadow: 0 0 4px #ffbdf7;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 20px auto;
+  border: 2px solid #ffbdf7;
+  border-radius: 8px;
+}
+
+/* 🎴 STORY PAGE BACKGROUND */
+.story-body {
+  background-image: url('Capital.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* 🎯 NAVIGATION */
+.nav {
+  margin-top: 50px;
+  text-align: center;
+}
+.nav a {
+  margin: 0 10px;
+}
+
+/* 🜏 ANIMATIONS */
+@keyframes neonPulse {
+  0% {
+    text-shadow: 0 0 5px #ff79c6, 0 0 10px #ff79c6, 0 0 20px #ff79c6, 0 0 40px #8be9fd;
+    color: #ffbdf7;
+  }
+  50% {
+    text-shadow: 0 0 10px #ff79c6, 0 0 20px #ff79c6, 0 0 30px #ffbdf7, 0 0 60px #ffbdf7;
+    color: #ffffff;
+  }
+  100% {
+    text-shadow: 0 0 5px #ff79c6, 0 0 10px #ff79c6, 0 0 20px #ff79c6, 0 0 40px #8be9fd;
+    color: #ffbdf7;
+  }
+}
